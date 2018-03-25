@@ -1,8 +1,4 @@
-/*
-Прога для того, чтобы в функцию передовалось дробное число и приходило дробное его число как интовое
-целое  число
 
-*/
 
 #include "stdafx.h"
 #include <iostream>
@@ -22,7 +18,7 @@ int fun(double a)
 	string str = os.str();
 	for (size_t i = 0; i < str.length(); ++i)
 	{
-		if (i != 0 && i != 1) // тут если вариантов много переделать
+		if (i != 0 && i != 1) // ГІГіГІ ГҐГ±Г«ГЁ ГўГ Г°ГЁГ Г­ГІГ®Гў Г¬Г­Г®ГЈГ® ГЇГҐГ°ГҐГ¤ГҐГ«Г ГІГј
 			newStr += str[i];
 	}
 
@@ -40,27 +36,27 @@ int main(int argc, char* argv[])
 	cout << fun(v) << endl;
 	while (f)
 	{
-		printf("Введите число:\n");
-		printf("1 - вводить число\n");
-		printf("2 - выход\n");
+		printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ::\n");
+		printf("1 - РІРІРѕРґРёС‚СЊ С‡РёСЃР»Рѕ\n");
+		printf("2 - РІС‹С…РѕРґ\n");
 		cin >> d;
 		switch (d)
 		{
-		case 1: // если count = 1
+		case 1: // ГҐГ±Г«ГЁ count = 1
 		{
-			printf("Введите число:\n");
+			printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ:\n");
 			double dsd = 0;
 			cin >> dsd;
 			cout << fun(dsd) << endl;
 			break;
 		}
-		case 2: // если count = 1
+		case 2: // ГҐГ±Г«ГЁ count = 1
 		{
 			f = false;
 			break;
 		}
 		default:
-			cout << "не то " << endl;
+			cout << "РЅРµ С‚Рѕ " << endl;
 			break;
 		}
 	}
